@@ -34,6 +34,15 @@ This `swapEnvironment.js` file offers you some methods like-
 - `renameFile(src, dest)` - This will rename file.
 - `readWpConfigFile()` - This will read wp-config file and gives you defined values.
 
+#### Project structure
+```
+plugin_folder
+|-----playwright.config.js
+|-----playwright-wp-config.php
+|-----swapEnvironment.js
+|-----swapBackEnvironment.js
+```
+
 _**If this package helps you anyway**_, please give me a **Star** ⭐ on [Github](https://github.com/RatulHasan/play-wordpress-wright).
 
 That's it, enjoy 🎉.
