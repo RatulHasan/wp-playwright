@@ -8,7 +8,7 @@ export const wpTestsConfigPath = join(__dirname, 'playwright-wp-config.php')
 
 
 // Read test config file and store defined data in config variable.
-const readWpConfigBackup = () => {
+export const readWpConfigFile = () => {
   if (!fs.existsSync(wpConfigPath)) {
     return null;
   }
@@ -85,7 +85,7 @@ async function swapEnvironment() {
       renameFile(wpTestsConfigPath, wpConfigPath)
 
       // get config data.
-      const config = readWpConfigBackup();
+      const config = readWpConfigFile();
 
       // If there is an error to get data, throw an error.
       if (!config) {

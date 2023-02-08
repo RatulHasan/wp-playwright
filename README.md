@@ -9,9 +9,9 @@ Must have `WP CLI` [installed](https://wp-cli.org/).
 
 ## ⚠️️ Attention ⚠️
 
-Currently don't install, download this from [github](https://github.com/RatulHasan/play-wordpress-wright), then copy and paste the swapEnvironment.js and swapBackEnvironment.js in your plugin directory. 
+Currently don't install, download this from [github](https://github.com/RatulHasan/play-wordpress-wright), then copy and paste the `swapEnvironment.js` and `swapBackEnvironment.js` in your plugin root directory. 
 
-Copy your `wp-config.php` file and place it in your plugin root directory like `akismet/` and rename it with `playwright-wp-config.php`.
+Then, Copy your `wp-config.php` file and place it in your plugin root directory like `akismet/` and rename it with `playwright-wp-config.php`.
 
 Add these line in `playwright-wp-config.php`
 ```
@@ -27,8 +27,14 @@ Add these lines in `playwright.config.js` file within `config` section.
 globalSetup: require.resolve( './swapEnvironment' ),
 globalTeardown: require.resolve( './swapBackEnvironment' ),
 ```
+This `swapEnvironment.js` file offers you some methods like-
 
-If this package helps you anyway, please give me a star ⭐ in [Github](https://github.com/RatulHasan/play-wordpress-wright).
+- `dropDatabaseTables()` - This will reset your test database.
+- `installWP()` - This will refresh your WordPress installation.
+- `renameFile(src, dest)` - This will rename file.
+- `readWpConfigFile()` - This will read wp-config file and gives you defined values.
+
+_**If this package helps you anyway**_, please give me a **Star** ⭐ in [Github](https://github.com/RatulHasan/play-wordpress-wright).
 
 That's it, enjoy 🎉.
 
