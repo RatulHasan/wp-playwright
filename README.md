@@ -15,8 +15,8 @@ Then, Copy your `wp-config.php` file and place it in your plugin root directory 
 
 Add these line in `playwright-wp-config.php`
 ```
-define( 'SITE_URL', 'your_site_url' ); 
-define( 'SITE_TITLE', 'Site_Name' );
+define( 'SITE_URL', 'your_site_url' ); // Like- https://test-wp.test
+define( 'SITE_TITLE', 'Site_Name' ); // Like- Test WP Site
 define( 'ADMIN_USERNAME', 'UserName' ); // This is not database username. This is login user name.
 define( 'ADMIN_PASSWORD', 'Password' ); // This is not database password. This is login password.
 define( 'ADMIN_EMAIL', 'admin@email.com' );
@@ -34,7 +34,7 @@ This `swapEnvironment.js` file offers you some methods like-
 - `renameFile(src, dest)` - This will rename file.
 - `readWpConfigFile()` - This will read wp-config file and gives you defined values.
 
-_**If this package helps you anyway**_, please give me a **Star** ⭐ in [Github](https://github.com/RatulHasan/play-wordpress-wright).
+_**If this package helps you anyway**_, please give me a **Star** ⭐ on [Github](https://github.com/RatulHasan/play-wordpress-wright).
 
 That's it, enjoy 🎉.
 
