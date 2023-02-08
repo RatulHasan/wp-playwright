@@ -7,6 +7,10 @@ Must have `WP CLI` [installed](https://wp-cli.org/).
 
 ## Installation process:
 
+## ⚠️️ Attention ⚠️
+
+Currently don't install, download this from [github](https://github.com/RatulHasan/play-wordpress-wright), then copy and paste the swapEnvironment.js and swapBackEnvironment.js in your plugin directory. 
+
 Copy your `wp-config.php` file and place it in your plugin root directory like `akismet/` and rename it with `playwright-wp-config.php`.
 
 Add these line in `playwright-wp-config.php`
@@ -24,4 +28,6 @@ globalSetup: require.resolve( './swapEnvironment' ),
 globalTeardown: require.resolve( './swapBackEnvironment' ),
 ```
 
-That's it, enjoy 🎉
+That's it, enjoy 🎉.
+
+Have a query? [Email](ratuljh@gmail.com) me
