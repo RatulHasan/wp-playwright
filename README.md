@@ -30,4 +30,4 @@ globalTeardown: require.resolve( './swapBackEnvironment' ),
 
 That's it, enjoy 🎉.
 
-Have a query? [Email](ratuljh@gmail.com) me
+Have a query? <a href="mailto:ratuljh@gmail.com">Email</a> me
