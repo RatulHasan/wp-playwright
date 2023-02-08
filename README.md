@@ -28,6 +28,8 @@ globalSetup: require.resolve( './swapEnvironment' ),
 globalTeardown: require.resolve( './swapBackEnvironment' ),
 ```
 
+If this package helps you anyway, please give me a star ⭐ in [Github](https://github.com/RatulHasan/play-wordpress-wright).
+
 That's it, enjoy 🎉.
 
 Have a query? <a href="mailto:ratuljh@gmail.com">Email</a> me
