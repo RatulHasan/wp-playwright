@@ -33,6 +33,7 @@ Add these lines in `playwright.config.js` file within `config` section.
 globalSetup: require.resolve( './swapEnvironment' ),
 globalTeardown: require.resolve( './swapBackEnvironment' ),
 ```
+### If you don't want to swap your environment and jus want to refresh your DB only-
 This `swapEnvironment.js` file offers you some methods like-
 
 - `dropDatabaseTables()` - This will reset your test database.
