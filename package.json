@@ -1,0 +1,24 @@
+{
+  "name": "wp-playwright",
+  "version": "1.0.0",
+  "description": "An e2e testing tool with playwright within WordPress to swap your environment easily.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RatulHasan/wp-playwright.git"
+  },
+  "keywords": [
+    "playwright",
+    "wordpress",
+    "e2e",
+    "wp-playwright"
+  ],
+  "author": "Ratul Hasan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RatulHasan/wp-playwright/issues"
+  },
+  "homepage": "https://github.com/RatulHasan/wp-playwright#readme"
+}
