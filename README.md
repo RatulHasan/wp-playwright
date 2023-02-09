@@ -50,6 +50,8 @@ plugin_folder
 |-----swapBackEnvironment.js
 ```
 
+Still couldn't get how to use this package? Watch this- [Video](https://youtu.be/P3Dpv0e80ko)
+
 _**If this package helps you anyway**_, please give me a **Star** ⭐ on [Github](https://github.com/RatulHasan/play-wordpress-wright).
 
 That's it, enjoy 🎉.
