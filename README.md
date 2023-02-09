@@ -21,6 +21,7 @@ define( 'ADMIN_USERNAME', 'UserName' ); // This is not database username. This i
 define( 'ADMIN_PASSWORD', 'Password' ); // This is not database password. This is login password.
 define( 'ADMIN_EMAIL', 'admin@email.com' );
 ```
+move `swapEnvironment.js` and `swapBackEnvironment.js` files to your plugin folder root.
 
 Add these lines in `playwright.config.js` file within `config` section.
 ```
