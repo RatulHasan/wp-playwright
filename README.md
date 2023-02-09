@@ -94,6 +94,21 @@ This `swapEnvironment.js` file offers you some methods like-
 - `renameFile(src, dest)` - This will rename file.
 - `readWpConfigFile(wpConfigPath)` - This will read wp-config file and gives you defined values.
 
+Documentation
+-------------
+
+For more information on how to use WP Playwright, including detailed instructions on how to configure different testing environments, check out the [official documentation](https://github.com/ratulhasan/wp-playwright).
+
+Contributing
+------------
+
+If you're interested in contributing to the development of WP Playwright, we welcome your contributions! Simply fork the repository on [Github](https://github.com/RatulHasan/play-wordpress-wright), make your changes, and submit a pull request.
+
+License
+-------
+
+WP Playwright is open-source software licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
 _**If this package helps you anyway**_, please give me a **Star** ⭐ on [Github](https://github.com/RatulHasan/play-wordpress-wright).
 
 That's it, enjoy 🎉.
