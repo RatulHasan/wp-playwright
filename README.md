@@ -1,5 +1,5 @@
-# Play wordpress wright
-An e2e testing tool with playwright within WordPress.
+# WP Playwright
+An e2e testing tool with playwright within WordPress to swap your environment easily.
 
 ## Prerequisites:
 
