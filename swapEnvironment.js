@@ -1,4 +1,4 @@
-import { exec } from 'child_process'
+import { exec, execSync } from 'child_process'
 import { join } from 'path'
 import fs from 'fs'
 
@@ -43,6 +43,15 @@ export const readWpConfigFile = () => {
 
 export const renameFile = ( src, dest ) => {
   fs.renameSync(src, dest);
+}
+
+export const createDatabaseIfNotExists = () => {
+  try {
+    console.log(execSync('wp db create').toString());
+    console.log('Database created successfully');
+  } catch (error) {
+    console.error(`Error creating database: ${error}`);
+  }
 }
 
 export const dropDatabaseTables = async () => {
@@ -94,6 +103,7 @@ async function swapEnvironment() {
         return;
       }
 
+      createDatabaseIfNotExists();
       await dropDatabaseTables();
       await installWP(config.SITE_URL, config.SITE_TITLE, config.ADMIN_USERNAME, config.ADMIN_EMAIL, config.ADMIN_PASSWORD);
     }
