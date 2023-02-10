@@ -1,14 +1,10 @@
 import { exec, execSync } from 'child_process'
-import { join } from 'path'
 import fs from 'fs'
-
-export const wpConfigPath = join(__dirname, '..', '..', '..', 'wp-config.php')
-export const wpConfigBackupPath = join(__dirname, '..', '..', '..', 'wp-config-backup.php')
-export const wpTestsConfigPath = join(__dirname, 'playwright-wp-config.php')
+import swapBackEnvironment from './swapBackEnvironment'
 
 
 // Read test config file and store defined data in config variable.
-export const readWpConfigFile = () => {
+export const readWpConfigFile = (wpConfigPath) => {
   if (!fs.existsSync(wpConfigPath)) {
     return null;
   }
@@ -87,19 +83,20 @@ export const installWP = async (site_url, title, username, email, password) => {
   });
 }
 
-async function swapEnvironment() {
+export const swapEnvironment = async ( wpConfigPath, wpTestsConfigPath ) =>{
   try {
     if (fs.existsSync(wpTestsConfigPath)) {
+      const wpConfigBackupPath = `${wpConfigPath}.backup`;
       renameFile(wpConfigPath, wpConfigBackupPath)
       renameFile(wpTestsConfigPath, wpConfigPath)
 
       // get config data.
-      const config = readWpConfigFile();
+      const config = readWpConfigFile(wpConfigPath);
 
       // If there is an error to get data, throw an error.
       if (!config) {
         console.error(`Error reading: ${wpConfigPath}`);
-        await swapEnvironment();
+        await swapBackEnvironment();
         return;
       }
 
